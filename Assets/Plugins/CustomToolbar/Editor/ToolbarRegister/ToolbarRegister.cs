@@ -8,14 +8,14 @@ namespace NKStudio
         {
 #if UNITY_6000
             // Unity Preview 캡션 지우기
-            Unity6CaptionToolbars.OnGUI(element);
+            Unity6CaptionGUI.OnGUI(element);
 #endif
             // Enter Play Mode Option
-            EnterPlayModeOptionToolbars.OnGUI(element);
+            EnterPlayModeGUI.OnGUI(element);
 
 #if USE_LOCALIZATION
             // Localization
-            LocalizationToolbars.OnGUI(element);
+            LocalizationGUI.OnGUI(element);
 #endif
         }
 
@@ -26,13 +26,13 @@ namespace NKStudio
         public static void OnDrawToolbarCenterLeft(VisualElement element)
         {
             // 0번째 씬에 이동
-            SceneSwitchLeftButton.OnGUI(element);
+            SceneSwitchFirstSceneGUI.OnGUI(element);
         }
 
         public static void OnDrawToolbarCenterRight(VisualElement element)
         {
             // 씬 메뉴를 통해 이동
-            SceneSwitchRightButton.OnGUI(element);
+            SceneSwitchListMoveGUI.OnGUI(element);
         }
     }
 }
