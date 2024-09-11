@@ -12,6 +12,8 @@ namespace NKStudio
 #endif
             // Enter Play Mode Option
             EnterPlayModeGUI.OnGUI(element);
+            
+            FMODGUI.OnGUI(element);
 
 #if USE_LOCALIZATION
             // Localization

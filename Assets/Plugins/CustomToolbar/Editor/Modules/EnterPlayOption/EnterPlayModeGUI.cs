@@ -38,9 +38,15 @@ namespace NKStudio
             // 초기 값 설정
             toggle.value = EditorSettings.enterPlayModeOptionsEnabled;
             
+            // 플레이 중에는 비활성화
+            toggle.SetEnabled(ToolbarUtility.IsNotPlaying);
+            
             // 값 변경 이벤트 설정
             toggle.RegisterValueChangedCallback(evt => EditorSettings.enterPlayModeOptionsEnabled = evt.newValue);
 
+            // 플레이 중에는 비활성화
+            EditorApplication.playModeStateChanged += _ => toggle.SetEnabled(ToolbarUtility.IsNotPlaying);
+            
             // 툴바에 추가
             element.Add(toggle);
         }
