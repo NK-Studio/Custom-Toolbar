@@ -2,9 +2,9 @@ using UnityEngine.UIElements;
 
 namespace NKStudio
 {
-    public static class Unity6CaptionGUI
+    internal static class Unity6CaptionGUI
     {
-        public static void OnGUI(VisualElement element)
+        internal static void OnGUI(VisualElement element)
         {
             var caption = element.Q<VisualElement>("ToolbarProductCaption");
 

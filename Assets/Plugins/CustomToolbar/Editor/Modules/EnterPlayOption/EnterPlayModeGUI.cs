@@ -4,9 +4,9 @@ using UnityEngine.UIElements;
 
 namespace NKStudio
 {
-    public static class EnterPlayModeGUI
+    internal static class EnterPlayModeGUI
     {
-        public static void OnGUI(VisualElement element)
+        internal static void OnGUI(VisualElement element)
         {
             var toggle = new Toggle();
             toggle.name = "EnterPlayModeOption";

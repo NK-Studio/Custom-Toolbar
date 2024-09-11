@@ -9,9 +9,9 @@ using UnityEngine.UIElements;
 
 namespace NKStudio
 {
-    public static class SceneSwitchFirstSceneGUI
+    internal static class SceneSwitchFirstSceneGUI
     {
-        public static void OnGUI(VisualElement element)
+        internal static void OnGUI(VisualElement element)
         {
             ToolbarButton button = new ToolbarButton
             {
@@ -94,7 +94,7 @@ namespace NKStudio
         }
     }
 
-    public static class SceneSwitchListMoveGUI
+    internal static class SceneSwitchListMoveGUI
     {
         public static void OnGUI(VisualElement element)
         {

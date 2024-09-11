@@ -12,9 +12,9 @@ using UnityEngine.UIElements;
 
 namespace NKStudio
 {
-    public static class LocalizationGUI
+    internal static class LocalizationGUI
     {
-        public static void OnGUI(VisualElement element)
+        internal static void OnGUI(VisualElement element)
         {
             var dropdown = new EditorToolbarDropdown();
             dropdown.name = "LocalizationDropdown";
