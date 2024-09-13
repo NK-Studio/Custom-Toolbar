@@ -15,6 +15,7 @@ namespace NKStudio
             var icon = new Image();
             
             // 사이즈 변경
+            icon.style.alignSelf = Align.Center;
             icon.style.width = 16;
             icon.style.height = 16;
 
@@ -24,6 +25,13 @@ namespace NKStudio
             
             // 토글 맨 앞에 아이콘 추가
             toggle[0].Insert(0, icon);
+            
+            // 버튼 스타일 적용
+#if UNITY_6000
+            // No Apply
+#else
+            ToolbarUtility.Apply2022ButtonStyle(toggle);
+#endif
             
             // 체크박스 삭제 후 뒤에 생성하도록 처리
             var check = toggle[0].Q<VisualElement>("unity-checkmark");

@@ -1,4 +1,6 @@
-﻿using UnityEngine.UIElements;
+﻿using UnityEditor.Toolbars;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
 
 namespace NKStudio
 {
@@ -17,6 +19,9 @@ namespace NKStudio
             // Localization
             LocalizationGUI.OnGUI(element);
 #endif
+            
+            // FMOD Debug
+            // FMODDebugGUI.OnGUI(element);
         }
 
         public static void OnDrawToolbarRight(VisualElement element)

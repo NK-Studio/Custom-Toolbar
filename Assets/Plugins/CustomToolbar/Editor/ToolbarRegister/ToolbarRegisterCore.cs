@@ -54,7 +54,7 @@ namespace NKStudio
             {
                 _toolbarCenterLeft = new VisualElement();
                 _toolbarCenterLeft.name = "CenterLeftGroup";
-                _toolbarCenterLeft.style.flexDirection = FlexDirection.Row;
+                _toolbarCenterLeft.style.flexDirection = FlexDirection.RowReverse;
 
                 playModeLayout.Insert(0, _toolbarCenterLeft);
             }
@@ -63,7 +63,7 @@ namespace NKStudio
             {
                 _toolbarCenterRight = new VisualElement();
                 _toolbarCenterRight.name = "CenterRightGroup";
-                _toolbarCenterRight.style.flexDirection = FlexDirection.RowReverse;
+                _toolbarCenterRight.style.flexDirection = FlexDirection.Row;
 
                 playModeLayout.Add(_toolbarCenterRight);
             }

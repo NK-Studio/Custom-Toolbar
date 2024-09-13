@@ -20,8 +20,10 @@ namespace NKStudio
                 style =
                 {
                     // 버튼 스타일 설정
-                    marginRight = 3
+                    marginRight = 3,
+                    unityTextAlign = TextAnchor.MiddleCenter
                 }
+                
             };
 
             // 툴팁 설정
