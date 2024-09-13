@@ -1,4 +1,5 @@
-﻿using UnityEngine.UIElements;
+﻿using UnityEditor.UIElements;
+using UnityEngine.UIElements;
 
 namespace NKStudio
 {
@@ -17,6 +18,8 @@ namespace NKStudio
             // Localization
             LocalizationGUI.OnGUI(element);
 #endif
+
+            TimeScaleGUI.OnGUI(element);
         }
 
         public static void OnDrawToolbarRight(VisualElement element)
